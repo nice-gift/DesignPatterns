@@ -1,4 +1,4 @@
-package Command.remote;
+package Command.undo;
 
 public interface Command {
     void execute();

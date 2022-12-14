@@ -1,4 +1,4 @@
-package Command.remote;
+package Command.undo;
 
 public class RemoteControl {
     Command[] commandOn;
@@ -42,6 +42,7 @@ public class RemoteControl {
             buffer.append("[slot ").append(i).append("]\t").append(commandOn[i].
                     getClass().getName()).append("\t").append(commandOff[i].getClass().getName()).append("\n");
         }
+        buffer.append(commandUndo.getClass().getName());
         return buffer + "";
     }
 }

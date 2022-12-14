@@ -2,10 +2,10 @@ package Command.remote;
 
 import Command.remote.client.Stereo;
 
-public class StereoOn implements Command {
+public class StereoOnCommand implements Command {
     Stereo stereo;
 
-    public StereoOn(Stereo stereo) {
+    public StereoOnCommand(Stereo stereo) {
         this.stereo = stereo;
     }
 
@@ -14,5 +14,10 @@ public class StereoOn implements Command {
         stereo.on();
         stereo.setCD();
         stereo.setVolume(11);
+    }
+
+    @Override
+    public void undo() {
+        stereo.offStereo();
     }
 }

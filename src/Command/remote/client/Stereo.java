@@ -10,7 +10,7 @@ public class Stereo {
     }
 
     public void setVolume(int volume) {
-        System.out.printf("Volume is %d", volume);
+        System.out.printf("Volume is %d\n", volume);
     }
 
     public void offStereo() {
